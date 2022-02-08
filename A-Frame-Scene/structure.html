@@ -12,7 +12,7 @@
 	<a-assets>
 		<img id="sky" src="images/sky.jpeg" crossorigin="anonymous" />
 		<img id="road" src="images/road.jpg" crossorigin="anonymous" />
-		<img id="car" src="images/car.png" crossorigin="anonymous" />
+		<img id="car" src="images/car.jpeg" crossorigin="anonymous" />
 		<img id="building" src="images/building.png" crossorigin="anonymous" />
 		<img id="human" src="images/human.png" crossorigin="anonymous" />
 		
@@ -32,29 +32,29 @@
 		shadow="cast: false; receive: true">
 	</a-plane>
 	
-	<a-box
+	<a-image
 		width = "2" height = "2" depth = "2"
 		position = "-1 0.5 -3"
 		rotation = "0 45 0"  
 		color = "#FFFFFF"
 		material = "src: #car"
 		shadow = "cast: true; receive: true">
-	</a-box>
+	</a-image>
 	
-	<a-sphere
+	<a-image
 		radius = "1.25"
 		position = "0 1.25 -5"
 		material = "src: #building;"
 		shadow = "cast: true; receive: true">
-	</a-sphere>
+	</a-image>
 	
-	<a-cylinder
+	<a-image
 		radius = "0.5" height = "1.5"
 		position = " 1 0.75 -3"
 		color = "#FFFFFF"
 		material = "src: #human; repeat: 4 2;"
 		shadow = "cast: true; receive: true">
-	</a-cylinder>
+	</a-image>
 	
 </a-scene>
 </body>
