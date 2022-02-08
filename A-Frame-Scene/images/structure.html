@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>A-Frame - Image Textures</title>
+	<script src="js/aframe-master.1.0.4.min.js"></script>
+</head>
+
+<body>
+<a-scene antialias="true">
+	
+	<a-assets>
+		<img id="sky" src="images/sky.jpeg" crossorigin="anonymous" />
+		<img id="road" src="images/road.jpg" crossorigin="anonymous" />
+		<img id="car" src="images/car.jpeg" crossorigin="anonymous" />
+		<img id="building" src="images/building.png" crossorigin="anonymous" />
+		<img id="human" src="images/human.png" crossorigin="anonymous" />
+		
+	</a-assets>
+		
+	<a-sky 
+		color = "#FFFFFF"
+		material = "src: #sky">
+	</a-sky>
+
+	<a-plane
+		width="100" height="100"
+		position=" 0.00 0.00 0.00" 
+		rotation="-90 0 0" 
+		color="#FFFFFF" 
+		material="src: #road; repeat:10 10; transparent: true; opacity: 0.75"
+		shadow="cast: false; receive: true">
+	</a-plane>
+	
+	<a-box
+		width = "2" height = "2" depth = "2"
+		position = "-1 0.5 -3"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #car"
+		shadow = "cast: true; receive: true">
+	</a-box>
+	
+	<a-sphere
+		radius = "1.25"
+		position = "0 1.25 -5"
+		material = "src: #building;"
+		shadow = "cast: true; receive: true">
+	</a-sphere>
+	
+	<a-cylinder
+		radius = "0.5" height = "1.5"
+		position = " 1 0.75 -3"
+		color = "#FFFFFF"
+		material = "src: #human; repeat: 4 2;"
+		shadow = "cast: true; receive: true">
+	</a-cylinder>
+	
+</a-scene>
+</body>
+</html>
