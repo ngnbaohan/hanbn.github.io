@@ -5,11 +5,11 @@
     <a-scene antialias="true">
 	
 	<a-assets>
-		<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
-       	 	<img id="dusty_lake" src="images/dusty_lake.jpg" crossorigin="anonymous" />
-       		<img id="old_church" src="images/old_church.jpg" crossorigin="anonymous" />
-       	 	<img id="marriot" src="images/marriot.jpg" crossorigin="anonymous" />
-        	<img id="whisky_room" src="images/whisky_room.jpg" crossorigin="anonymous" />
+		<img id="sky" src="images/brick.jpg" crossorigin="anonymous" />
+       	 	<img id="dusty_lake" src="images/business.jpg" crossorigin="anonymous" />
+       		<img id="old_church" src="images/campus.jpg" crossorigin="anonymous" />
+       	 	<img id="marriot" src="images/castle.jpg" crossorigin="anonymous" />
+       
 	</a-assets>
 		
 	<a-sky 
@@ -18,7 +18,7 @@
 	</a-sky>
     
       <a-box
-	gltf-model="models/burger.glb"
+	gltf-model="models/brick_wall.glb"
         position="-2 2 -2"
         scale=".2 .2 .2"     
         rotation="0 45 0"
@@ -27,6 +27,7 @@
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #old_church"      
       ></a-box>  
      <a-box
+    	gltf-model="models/castle.glb"
         position="2 2 -2"
         scale=".2 .2 .2" 
         rotation="0 -45 0"
@@ -35,7 +36,7 @@
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #dusty_lake"      
       ></a-box>  
      <a-box
-    	gltf-model="models/burger.glb"
+    	gltf-model="models/graduation_cap.glb"
         position="0 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
@@ -44,7 +45,7 @@
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #whisky_room"     
       ></a-box> 
      <a-box
-    	gltf-model="models/burger.glb"
+    	gltf-model="models/piggy_bank.glb"
         position="2 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
