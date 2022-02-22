@@ -5,10 +5,12 @@
     <a-scene antialias="true">
 	
 	<a-assets>
-		<img id="sky" src="images/brick.jpg" crossorigin="anonymous" />
-       	 	<img id="dusty_lake" src="images/business.jpg" crossorigin="anonymous" />
-       		<img id="old_church" src="images/campus.jpg" crossorigin="anonymous" />
-       	 	<img id="marriot" src="images/castle.jpg" crossorigin="anonymous" />
+		<img id="brick" src="images/brick.jpg" crossorigin="anonymous" />
+       	 	<img id="business" src="images/business.jpg" crossorigin="anonymous" />
+       		<img id="campus" src="images/campus.jpg" crossorigin="anonymous" />
+       	 	<img id="castle" src="images/castle.jpg" crossorigin="anonymous" />
+		
+		
        
 	</a-assets>
 		
@@ -24,7 +26,7 @@
         rotation="0 45 0"
         value="Nine O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #old_church"      
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #brick"      
       ></a-box>  
      <a-box
     	gltf-model="models/castle.glb"
@@ -33,7 +35,7 @@
         rotation="0 -45 0"
         value="Three O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #dusty_lake"      
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #castle"      
       ></a-box>  
      <a-box
     	gltf-model="models/graduation_cap.glb"
@@ -42,7 +44,7 @@
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #whisky_room"     
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #campus"     
       ></a-box> 
      <a-box
     	gltf-model="models/piggy_bank.glb"
@@ -51,7 +53,7 @@
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #marriot"     
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #business"     
       ></a-box> 
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
